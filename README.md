@@ -1,0 +1,1 @@
+The project is a Dashboard UI made with HTML, CSS, and JavaScript that showcases a responsive user interface with various interactive elements. It demonstrates the use of a visually appealing and user-friendly experience. It features responsive design, making it adaptive for various screen sizes and devices.

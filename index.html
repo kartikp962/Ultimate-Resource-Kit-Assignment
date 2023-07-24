@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<link rel="stylesheet" href="style3.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="floatdiv.css">
+<link rel="stylesheet" href="slider.css">
+<link rel="stylesheet" href="scroll.css">
+<link rel="stylesheet" href="form.css">
+<link rel="stylesheet" href="circle.css">
+<link rel="stylesheet" href="sidebar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+
+<head>
+    <title>Responsive Divs</title>
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <div
+            style="display: flex; justify-content: center; align-items: center; margin-top: 10px; margin-bottom: 10px; ">
+            <img style="width: 50px; border-radius: 25px;"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlC8G41GK6qJFiH_txP7pF41Z0k_WOwRSzWQ&usqp=CAU">
+            </div>
+        <li style="margin-bottom: 10vh;"> <a href="#"><span class="material-icons">search</span></a></li>
+        <div>
+            <li><a href="#"><span class="material-icons">home</span></a></li>
+            <li><a href="#"><span class="material-icons">account_balance</span></a></li>
+            <li><a href="#"><span class="material-icons">account_circle</span></a></li>
+            <li><a href="#"><span class="material-icons">person</span></a></li>
+
+        </div>
+
+        <div class="bottom-links">
+            <li><a href="#"><span class="material-icons">notifications</span></a></li>
+            <li><a href="#"><span class="material-icons">logout</span></a></li>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <div class="notification-icon">
+                <li style="list-style: none" ;> <a href="#"><span class="material-icons">notifications</span></a></li>
+                <span class="notification-indicator"></span>
+            </div>
+
+            <div class="profile" style="display: flex; align-items: center ; ">
+                <img style="height: 60px; width: 60px; margin-right: 20px; border-radius: 50px;"
+                src="https://e7.pngegg.com/pngimages/302/740/png-clipart-computer-icons-avatar-boy-boys-child-face.png">
+                <div>
+                    <h2 style="margin: 0;">Hi Mike,</h2>
+                    <p style="margin: 0 ;font-size: 12px;
+                    color: #888;">welcome back</p>
+                </div>
+            </div>
+
+            <div class="account">
+                <div>
+                    <p style="font: bold;">Today</p>
+                    <div style="margin-bottom: 10px;">
+                        <h1 style="margin: 0 ">$19,892</h1>
+                        <p style="margin: 0 ;font-size: 12px;
+                        color: #888;">Account balance</p>
+                    </div>
+                    <div class="balance" >
+                        <div style="margin-bottom: 10px; margin-right: 25px;">
+                            <h2 style="margin: 0;">$4,000</h3>
+                            <p style="margin: 0; ;font-size: 12px;
+                            color: #888;">year-to-date contributions</p>
+                        </div>
+                        <div style="margin-bottom: 10px; width: 100%;">
+                            <h2 style="margin: 0;">$1,892</h2>
+                            <p style="margin: 0; ;font-size: 12px;
+                            color: #888;">Total-interest</p>
+                        </div>
+                    </div>
+                </div>
+                <select id="customSelect">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                    <option>Option 5</option>
+                </select>
+
+            </div>
+
+
+            <div class="over">
+                <p class="withover" style="font-weight:600; font-size: 18px;">Recent
+                    transactions</p>
+                <div class="over-content">
+                    <div class="transaction"
+                        style="box-shadow: 0 2px 4px rgba(73, 53, 255, 0.5); padding: 10px; margin-bottom: 10px; border-radius: 10px;">
+                        <div class="date" style="color: #4935FF; ">2020-00-07</div>
+                        <div>Description: Transfer to Bank-XXX11</div>
+                    </div>
+                    <div class="transaction"
+                        style="box-shadow: 0 2px 4px rgba(73, 53, 255, 0.5); padding: 10px; margin-bottom: 10px; border-radius: 10px;">
+                        <div class="date" style="color: #4935FF; ">203-07-21</div>
+                        <div>Description: Transfer to Bank-J0X11</div>
+                    </div>
+                    <div class="transaction"
+                        style="box-shadow: 0 2px 4px rgba(73, 53, 255, 0.5); padding: 10px; margin-bottom: 10px; border-radius: 10px;">
+                        <div class="date" style="color: #4935FF; ">203-07-21</div>
+                        <div>Description: Transfer to Bank-XXXX11</div>
+                    </div>
+                    <div class="transaction"
+                        style="box-shadow: 0 2px 4px rgba(73, 53, 255, 0.5); padding: 10px; margin-bottom: 10px; border-radius: 10px;">
+                        <div class="date" style="color: #4935FF; ">2020-00-07</div>
+                        <div>Description: Transfer to Bank-XXX11</div>
+                    </div>
+                    <div class="transaction"
+                        style="box-shadow: 0 2px 4px rgba(73, 53, 255, 0.5); padding: 10px; margin-bottom: 10px; border-radius: 10px;">
+                        <div class="date" style="color: #4935FF;">203-07-21</div>
+                        <div>Description: Transfer to Bank-J0X11</div>
+                    </div>
+                    <div class="transaction"
+                        style="box-shadow: 0 2px 4px rgba(73, 53, 255, 0.5); padding: 10px; margin-bottom: 10px; border-radius: 10px;">
+                        <div class="date" style="color: #4935FF; ">203-07-21</div>
+                        <div>Description: Transfer to Bank-XXXX11</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="middle" style="font-family: 'Roboto', 'Helvetica', 'Padauk', sans-serif;">
+            <div class="middle-flex">
+                <div>
+                    <p style="font-size: 12px; font-weight: 600 ;color: #4935FF;">Retirement Income</p>
+                    <h4 style="margin-top: 0px;">Starting Year 2056</h4>
+                </div>
+
+                <div class="income-container">
+                    <div class="vertical">
+                        <div class="colored-div color1">
+                            <div class="item" style="margin-right: 5px;">
+                                <h4>$300000</h4>
+                                <p>my goal</p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="colored-div color2">
+                            <div class="item" style="margin-right: 5px;">
+                                <h4>$59%</h4>
+                                <p>my goal</p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="colored-div color3">
+                            <div class="item">
+                                <h4>$300</h4>
+                                <p>my goal</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal">
+                        <div class="colored-div color1">
+                            <div class="item">
+                                <h2>$300,000</h2>
+                                <p>My Goal</p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="colored-div color2" style="margin-left: 5px;">
+                            <div class="item">
+                                <h2>59%</h2>
+                                <p>Goal Acheived</p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="colored-div color3" style="margin-left: 5px;">
+                            <div class="item">
+                                <h2>$300</h2>
+                                <p>Estimated Monthly interest</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas" style="margin-top: 25px; margin-bottom: 55px;">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <!-- <canvas id="myChart" width="300" height="150"></canvas>  -->
+                <div class="hide">
+                    <div style="margin: 0; padding: 0;">
+                        <h4 style="margin-bottom: 5px;">How do I compare to my Peers</h4>
+                        <p style="margin-top: 5px; font-size: 12px; color: #888;">These numbers represent current goal
+                            achievement</p>
+                    </div>
+
+                    <div class="ch" style="justify-content: space-between;">
+
+                        <div
+                            style="display: flex; flex-direction: column; width: 150px; justify-content: space-between; font-size: 12px;">
+                            <div>
+                                <span style="margin-right: 10px; font-weight: bold;">Age:</span>
+                                <select id="select" style="border: none; font-size: 12px;">
+                                    <option value="apple">Apple</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="orange">Orange</option>
+                                    <option value="grape">Grape</option>
+                                </select>
+                            </div>
+                            <hr style="margin: 5px 0;">
+                            <div>
+                                <span style="margin-right: 10px; font-weight: bold;">Salary:</span>
+                                <select id="select" style="border: none; font-size: 12px;">
+                                    <option value="apple">Apple</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="orange">Orange</option>
+                                    <option value="grape">Grape</option>
+                                </select>
+                            </div>
+                            <hr style="margin: 5px 0;">
+                            <div>
+                                <span style="margin-right: 10px; font-weight: bold;font-size: 12px; ">Gender:</span>
+                                <select id="select" style="border: none; font-size: 12px;">
+                                    <option value="apple">Male</option>
+                                    <option value="banana">Female</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="flex-wrapper"
+                            style="width: 70%; display: flex; justify-content: space-between; align-items: center;">
+                            <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <path class="circle-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle-lightblue"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle-blue" stroke-dasharray="30, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="percentage">78%</text>
+                                </svg>
+                            </div>
+                            <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <path class="circle-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle-lightblue"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle-blue" stroke-dasharray="30, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="percentage">95%</text>
+                                </svg>
+                            </div>
+                            <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <path class="circle-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle-lightblue"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle-blue" stroke-dasharray="30, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="percentage">59%</text>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cv" style="flex-direction: column; justify-content: space-between;">
+                        <div
+                            style="display: flex; flex-direction: column; width: 100%; justify-content: space-between; font-size: 12px;">
+                            <div>
+                                <span style="margin-right: 10px; font-weight: bold;">Age:</span>
+                                <select id="select" style="border: none; font-size: 12px;">
+                                    <option value="apple">Apple</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="orange">Orange</option>
+                                    <option value="grape">Grape</option>
+                                </select>
+                            </div>
+                            <hr style="margin: 10px 0;">
+                            <div>
+                                <span style="margin-right: 10px; font-weight: bold;">Salary:</span>
+                                <select id="select" style="border: none; font-size: 12px;">
+                                    <option value="apple">Apple</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="orange">Orange</option>
+                                    <option value="grape">Grape</option>
+                                </select>
+                            </div>
+                            <hr style="margin: 10px 0;">
+                            <div>
+                                <span style="margin-right: 10px; font-weight: bold;font-size: 12px; ">Gender:</span>
+                                <select id="select" style="border: none; font-size: 12px;">
+                                    <option value="apple">Male</option>
+                                    <option value="banana">Female</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="flex-wrapper"
+                            style="display: flex; justify-content: space-between; align-items: center;  margin-top: 25px;">
+                            <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <!-- Content for the first circular chart -->
+                                    <!-- For example, you can add paths, circles, or other SVG elements here -->
+                                    <path class="circle-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle-lightblue"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle-blue" stroke-dasharray="30, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="percentage">78%</text>
+                                </svg>
+                            </div>
+                            <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <!-- Content for the second circular chart -->
+                                    <!-- For example, you can add paths, circles, or other SVG elements here -->
+                                    <path class="circle-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle-lightblue"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle-blue" stroke-dasharray="30, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="percentage">95%</text>
+                                </svg>
+                            </div>
+                            <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart">
+                                    <!-- Content for the third circular chart -->
+                                    <!-- For example, you can add paths, circles, or other SVG elements here -->
+                                    <path class="circle-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle-lightblue"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle-blue" stroke-dasharray="30, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="percentage">59%</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="right" style="padding-top: 20px;">
+
+            <div class="retirement-container">
+                <p style="font-size: 14px; margin-bottom: 30px; ">Retirement Strategy</p>
+                <div class="input-container" style="margin-bottom: 25px;">
+                    <p>Employee Contribution</p>
+                    <div class="slider-container">
+                        <input type="range" id="employee-contribution-slider" min="0" max="100" step="1" value="50">
+                        <span style="font-size: 12px; font-weight: bold;"  id="employee-contribution-value">50%</span>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <p>Retirement Age</p>
+                    <div class="slider-container">
+                        <input type="range" id="retirement-age-slider" min="0" max="100" step="1" value="50">
+                        <span style="font-size: 12px; font-weight: bold;" id="retirement-age-value">50%</span>
+                    </div>
+                </div>
+                <hr style="margin-top: 30px; ">
+                <div class="values-container">
+                    <p>Employee Contribution</p>
+                    <p>8.4%</p>
+                </div>
+                <div class="values-container">
+                    <p>Interest rate</p>
+                    <p>5%</p>
+                </div>
+                <button
+                style="width: 100%; margin-top: 20px; border: none; border-radius: 10px; background-color: #4935FF; color: white; padding: 10px 20px; font-size: 16px; cursor: pointer;">Update</button>
+
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 30px; font-size: small; margin-bottom: 10px; color: #4935FF;">
+                    <a>  View Help Docs ></a>
+                </div>
+            </div>
+          
+                <div class="allowance" style="border-left: 2px solid #4935FF; padding-left: 10px; margin-top: 40px;">
+                    <p style="font-size: 14px; font-weight: 400; margin: 0;">Are you considering</p>
+                    <p style="font-size: 14px; font-weight: 600; margin: 0;">Housing Allowance ?</p>
+            
+                    <p style="font-size: 12px; font-weight: 400; color: #CBCBCB;">limited with reduced interest</p>
+                    <a style="font-size: 10px; font-weight: 600; color: #4935FF;">Learn More ></a>
+            
+                </div>
+        </div>       
+    </div>
+  
+        <div class="footer" style="background: linear-gradient(to right, white, #FAFAFA);  animation: gradientAnimation 5s infinite alternate;">
+            <div style="display: flex; background-color: white; width: 400px; height: 100%; justify-content: space-between; align-items: center; ">
+                <li style="background-color: #4935FF; border-radius: 4px; height: 50px; display: flex ;justify-content: center; align-items: center;" ><a href="#"><span style="color: #FAFAFA;" class="material-icons">home</span></a></li>
+                <li style="border-radius: 4px; height: 50px; display: flex ;justify-content: center; align-items: center;" ><a href="#"><span  class="material-icons">account_balance</span></a></li>
+                <li style="border-radius: 4px; height: 50px; display: flex ;justify-content: center; align-items: center;" ><a href="#"><span class="material-icons">account_circle</span></a></li>
+                <li style="border-radius: 4px; height: 50px; display: flex ;justify-content: center; align-items: center;" ><a href="#"><span  class="material-icons">person</span></a></li>
+                <li style="border-radius: 4px; height: 50px; display: flex ;justify-content: center; align-items: center;" ><a href="#"><span  class="material-icons">search</span></a></li>
+            </div>
+        </div>
+
+   
+</body>
+<script src="script.js"></script>
+
+</html>

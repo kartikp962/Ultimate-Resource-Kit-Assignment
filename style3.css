@@ -1,0 +1,62 @@
+   
+      
+      .horizontal{
+        display: flex;
+        justify-content:space-between;
+      }
+     
+      
+      /* Styles for links inside the sidebar (top links) */
+      .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+      }
+      
+      /* Styling the <select> element */
+      #customSelect {
+        background-color: #4935FF; /* Background color */
+        color: white; /* Text color */
+        font-size: 16px; /* Font size */
+        border: 2px solid #4935FF; /* Border color */
+        border-radius: 6px; /* Rounded corners */
+        padding: 8px; /* Spacing inside the <select> element */
+        width: 200px; /* Set the width of the select box */
+        margin-top: 25px;
+    }
+    
+    /* Styling the <option> elements */
+    #customSelect option {
+        background-color: #4935FF; /* Background color of each option */
+        color: white; /* Text color of each option */
+    }
+
+      @media screen and (max-width: 760px) {
+
+
+  /* New styles for the footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #111;
+    display: flex; /* Use flexbox to arrange content horizontally */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+  }
+
+  .footer a {
+    padding: 6px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    margin: 0 5px; /* Add spacing between links */
+  }
+  
+}
+
+        
